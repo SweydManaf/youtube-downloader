@@ -1,4 +1,4 @@
-# youtube-downloader
+# Youtube Downloader
  Aplicativo para download de vídeos e músicas do youtube feito com tkinter
  
  NB: Em desenvolvimento
