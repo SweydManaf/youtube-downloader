@@ -1,0 +1,6 @@
+pythumb==1.1.0
+regex==2022.9.13
+tk==0.1.0
+youtube-dl-cli==0.1.2
+youtube-dl-service==0.0.2
+youtube-dl==2020.12.29
