@@ -13,7 +13,7 @@ class MainWindow:
         self.noteBook = ttk.Notebook(root)
         self.noteBook.configure(width=510, height=520)
 
-        # HOME PAGE
+        #################################### HOME PAGE ######################################################
         self.homePage = ttk.Frame(self.noteBook)
 
         self.youtubeImage = ImageTk.PhotoImage(Image.open('assets/youtube-icon-60.png'))
@@ -62,10 +62,18 @@ class MainWindow:
         self.statusConnection = ttk.Label(self.homePage, text='Disconnected', font='Arial 9', width=12,
                                           image=self.redStatusImage, compound=RIGHT)
 
-        # DOWNLOAD PAGE
+        ############################## DOWNLOAD PAGE ################################################################
         self.downloadPage = ttk.Frame(self.noteBook)
+        self.title = ttk.Label(self.downloadPage, text='Alan Walker - Believers')
+        
+        
+        self.title.grid(row=0, column=0)
+        self.progreeDownload.grid(row=1, column=0)
 
-        # ADD PAGES TO THE NOTEBOOK
+
+
+
+        ##################################### ADD PAGES TO THE NOTEBOOK #############################################
         self.homeImage = ImageTk.PhotoImage(Image.open('assets/home-icon-30.png'))
         self.noteBook.add(self.homePage, text='Home', image=self.homeImage, compound=LEFT)
         self.downloadImage = ImageTk.PhotoImage(Image.open('assets/download-icon-30.png'))
