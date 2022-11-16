@@ -68,7 +68,7 @@ class MainWindow:
         
         
         self.title.grid(row=0, column=0)
-        self.progreeDownload.grid(row=1, column=0)
+        
 
 
 
