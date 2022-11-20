@@ -189,7 +189,7 @@ class MainWindow:
             print(yt.get_thumb())
             print(f'{yt.get_info_about_download(self.radioTypeVar.get(), self.radioQualityVar.get())} MB')
 
-            Thread(target=lambda: yt.download(self.linkVar.get())).start()
+            Thread(self.download_tread(yt)).start()
 
             # SHOW DOWNLOAD INFO RESPONSE
             self.showInfoLabel['text'] = 'Download added'
@@ -197,3 +197,8 @@ class MainWindow:
 
     def update_show_info(self):
         self.showInfoLabel['text'] = ''
+
+    def download_tread(self, youtube):
+        link = self.linkVar.get().strip()
+        youtube.download(link)
+        messagebox.showinfo('Donwload', 'Your download is complete')
