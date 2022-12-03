@@ -42,7 +42,6 @@ Obrigado às seguintes pessoas que contribuíram para este projeto:
 * [@sweydmanaf](https://github.com/sweydmanaf) 📖
 
 
-
 ## Contato
 
 Se quiser entrar em contato comigo, você pode entrar em contato comigo em <abdulsweyd@gmail.com>.
