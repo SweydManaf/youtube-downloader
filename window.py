@@ -63,15 +63,6 @@ class MainWindow:
                                           image=self.redStatusImage, compound=RIGHT)
 
         ############################## DOWNLOAD PAGE ################################################################
-        self.downloadPage = ttk.Frame(self.noteBook)
-        self.title = ttk.Label(self.downloadPage, text='Alan Walker - Believers')
-        
-        
-        self.title.grid(row=0, column=0)
-        
-
-
-
 
         ##################################### ADD PAGES TO THE NOTEBOOK #############################################
         self.homeImage = ImageTk.PhotoImage(Image.open('assets/home-icon-30.png'))
